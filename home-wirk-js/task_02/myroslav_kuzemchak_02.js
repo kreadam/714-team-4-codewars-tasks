@@ -140,7 +140,7 @@ function cockroachSpeed(s) {
   return Math.floor((s * 1000 * 100) / (60 * 60));
 }
 
-// Dad and Son (need to optimize execution time)
+// Dad and Son
 
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   if (dadYearsOld / sonYearsOld === 2) {
@@ -169,4 +169,37 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
       }
     }
   }
+}
+
+// Get Nth Even Number
+
+function nthEven(n) {
+  return (n - 1) * 2;
+}
+
+// What's the real floor
+
+function getRealFloor(n) {
+  if (n < 0) {
+    return n;
+  } else if (n === 1 || n === 0) {
+    return 0;
+  } else if (n > 13) {
+    return n - 2;
+  } else {
+    return n - 1;
+  }
+}
+
+// Begginer Series #2 Clock
+
+function past(h, m, s) {
+  const secondsTotal = h * 60 * 60 + m * 60 + s;
+  return secondsTotal * 1000;
+}
+
+// Is n divisible by x and y?
+
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0;
 }
